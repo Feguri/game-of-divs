@@ -2,15 +2,25 @@ html {
     background-color: black;
     color: white;
     font-family: sans-serif;
-    height: 100%;
+    background-repeat: no-repeat;
+    height: 115%;
+    /* overflow: hidden; */
 }
 
 img {
     float: left;
-    
+}
+
+footer {
+    margin-top: 230px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 815px) {
+    html {
+        overflow: scroll !important;
+        height: 144%;
+    }
     .container {
         grid-template-columns: repeat(2, 1fr) !important;
         grid-template-rows: repeat(4, 1fr) !important; 
