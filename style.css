@@ -2,20 +2,35 @@ html {
     background-color: black;
     color: white;
     font-family: sans-serif;
+    height: 100%;
 }
 
-@media only screen and (max-width: 615px) {
+img {
+    float: left;
+    
+}
+
+@media only screen and (max-width: 815px) {
     .container {
         grid-template-columns: repeat(2, 1fr) !important;
         grid-template-rows: repeat(4, 1fr) !important; 
         width: 400px !important;
     }
+    .display-info {
+        width: 60% !important;
+    }
+    #reset {
+        margin-bottom: 50px !important;
+    }
 }
 
-@media only screen and (max-width: 315px) {
+@media only screen and (max-width: 370px) {
     .media-div {
         height: 70px !important;
         width: 70px !important;
+    }
+    .display-info {
+        width: 80% !important;
     }
 }
 
@@ -40,6 +55,23 @@ h1, p {
 
 #button:hover {
     background: rgb(24, 24, 24);
+}
+
+.display-info {
+    width: 40%;
+    font-size: small;
+    text-indent: 50px;
+    background-color: #0b0b0b;
+    padding: 1px 20px;
+    border-radius: 8px;
+    letter-spacing: 0.05rem;
+    line-height: 19px;
+    word-spacing: 2px;
+    display: none;
+}
+
+.text-align {
+    text-align: left;
 }
 
 .grid-container {
@@ -68,4 +100,26 @@ h1, p {
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
     border: 3px solid #fff;
+}
+
+#reset {
+    border: 2px solid #fff;
+    color: white;
+    background-color: #000;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px 30px;
+    margin-top: 100px;
+    display: none;
+}
+
+#reset:hover {
+    background: rgb(24, 24, 24);
+}
+
+.info-bg {
+    background-color: #c4c4c4;
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
 }
